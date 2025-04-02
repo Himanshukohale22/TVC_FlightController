@@ -1,5 +1,7 @@
 # STM32g0 neclo board development for TCV Flight controller.
-## Hardware components.
+
+This repository contains the firmware for Hardware desinged specifically for flight controller with STM32G071RB microcontroller and some other sensors and electronics components.
+
 
 ### Project Flow
 
