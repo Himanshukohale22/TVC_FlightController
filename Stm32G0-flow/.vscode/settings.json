@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "gpio.h": "c",
+        "rcc.h": "c"
+    },
+    "cmake.sourceDirectory": "/home/if-himanshu/Stm32G0-flow/FreeRTOS"
+}
