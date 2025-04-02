@@ -4,14 +4,21 @@
 
 ### Project Flow
 
-my_stm32g0_project/
-├── Makefile
-├── include/
-│   ├── peripheral_setup.h
-│   └── project_config.h
-├── src/
-│   ├── main.c
-│   ├── peripheral_setup.c
-│   └── application_logic.c
-└── lib/
-    └── (any custom libraries)
+Stm32G0-flow/
+│── Draw/
+│── FreeRTOS/
+│── libopencm3/
+│── app/
+│   │── imu.c
+│   │── barometer.c
+│   │── gps.c
+│   │── led.c
+│   │── pub.c
+│   │── sub.c
+│   │── thrustvector.c
+│   │── SD_Card.c
+│── src/
+│── lib/
+│── include/
+│── Makefile
+│── Readme.md
