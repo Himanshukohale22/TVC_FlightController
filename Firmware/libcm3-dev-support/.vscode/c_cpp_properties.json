@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/../libopencm3/include",
+                "/usr/arm-none-eabi/include",
+                "/usr/lib/arm-none-eabi/include"
+            ],
+            "defines": [
+                "STM32G0",
+                "STM32G071xB"  // Your specific MCU define
+            ],
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}
