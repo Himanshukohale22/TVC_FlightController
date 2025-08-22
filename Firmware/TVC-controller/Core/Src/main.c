@@ -23,6 +23,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "imu.h"
+#include "bmp.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -137,6 +139,7 @@ int main(void)
   {
 
     /* USER CODE END WHILE */
+	  printf("altitude: %f",Baro_data.)
 
     /* USER CODE BEGIN 3 */
   }
