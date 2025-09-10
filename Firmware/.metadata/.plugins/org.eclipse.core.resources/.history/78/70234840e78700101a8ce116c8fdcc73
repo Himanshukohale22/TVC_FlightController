@@ -1,0 +1,26 @@
+/*
+ * Apogee_Detection.c
+ *
+ *  Created on: Sep 2, 2025
+ *      Author: if-himanshu
+ */
+
+
+#include "imu.h"
+#include "bmp.h"
+
+#define APOGEE_DETECTED 10
+#define APOGEE_NOT_DETECTED 0
+
+
+void Apogee_Detection(){
+
+	// baro
+
+
+	// vel
+
+	// accel
+
+	return 0;
+}

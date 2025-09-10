@@ -42,7 +42,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/user_diskio.h \
  ../Core/Inc/imu.h \
  ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g491xx.h \
- ../Core/Inc/main.h
+ ../Core/Inc/main.h ../Core/Inc/bmp.h ../Core/Inc/imu.h
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
 ../Core/Inc/stm32g4xx_hal_conf.h:
@@ -91,3 +91,5 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/imu.h:
 ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g491xx.h:
 ../Core/Inc/main.h:
+../Core/Inc/bmp.h:
+../Core/Inc/imu.h:

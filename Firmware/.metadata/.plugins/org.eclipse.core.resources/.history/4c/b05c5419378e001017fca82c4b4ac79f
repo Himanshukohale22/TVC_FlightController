@@ -1,0 +1,65 @@
+/*
+ * Apogee_Detection.c
+ *
+ *  Created on: Sep 2, 2025
+ *      Author: if-himanshu
+ */
+
+
+#include "imu.h"
+#include "bmp.h"
+
+//#define APOGEE_DETECTED 10
+//#define APOGEE_NOT_DETECTED 0
+#define PI 3.14
+
+// Function for apogee detection
+int Apogee_Detection(void) {
+
+	/////////////////////Altitude estimation based apogee detection///////////////////////////
+    static float last_altitude = 0.0f;   // previous altitude
+    static int apogee_flag = APOGEE_NOT_DETECTED;
+
+    float altitude_estimated = BMP280.UAV_Altitude;  // from barometer (or fused)
+
+    if (altitude_estimated <= 0.0f) {
+        printf("Rocket is on ground\n");
+        apogee_flag = APOGEE_NOT_DETECTED;
+    } else {
+        printf("Rocket altitude: %.2f m\n", altitude_estimated);
+s
+        // Apogee detection logic:
+        // If altitude starts decreasing after increase → apogee detected
+        if ((altitude_estimated < last_altitude) && (apogee_flag == APOGEE_NOT_DETECTED)) {
+            apogee_flag = APOGEE_DETECTED;
+            printf("Apogee detected at %.2f m!\n", last_altitude);
+        }
+    }
+
+    last_altitude = altitude_estimated;  // update for next cycle
+
+    printf("Alti Apogee detected : %f %f\n", altitude_estimated ,last_altitude);
+
+
+
+    /////////////////////Acceleration in z based apogee detection///////////////////////////
+
+    // depends on z direction
+
+
+
+
+    /////////////////////Velocities based apogee detection///////////////////////////
+
+    float velocity_estimator;
+    float current_vel;
+    float previous_vel;
+    float acceleration_z;
+
+    //envelop     vel = zero = -(vel);
+
+
+
+    return apogee_flag;
+}
+

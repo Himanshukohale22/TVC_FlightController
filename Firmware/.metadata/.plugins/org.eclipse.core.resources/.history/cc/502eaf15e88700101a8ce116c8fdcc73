@@ -1,0 +1,30 @@
+/*
+ * Apogee_Detection.c
+ *
+ *  Created on: Sep 2, 2025
+ *      Author: if-himanshu
+ */
+
+
+#include "imu.h"
+#include "bmp.h"
+
+#define APOGEE_DETECTED 10
+#define APOGEE_NOT_DETECTED 0
+
+
+void Apogee_Detection(Baro_data, kalman_data){
+
+	// baro
+	if (BMP280.UAV_Altitude <= 0)
+		printf("ROCKET IS ON GROUND ");
+	else
+		printf("ROCKET altitude : %f\n", BMP280.UAV_Altitude);
+
+
+	// vel
+
+	// accel
+
+	return 0;
+}
