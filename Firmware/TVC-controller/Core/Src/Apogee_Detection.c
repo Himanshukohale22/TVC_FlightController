@@ -57,6 +57,8 @@ int Apogee_Detection(void) {
     float acceleration_z;
 
     //envelop     vel = zero = -(vel);
+    //rad/s - m/s
+    //x*(3.14/180) = x
 
 
 
